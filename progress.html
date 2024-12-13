@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress - Typing Speed Booster</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Typing Speed Booster</h1>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="progress.html" class="active">Progress</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="progress" class="section">
+            <h2>Your Progress</h2>
+            <p>Track your typing achievements and growth over time!</p>
+            <div class="progress-container">
+                <div class="progress-card">
+                    <h3>Words Per Minute</h3>
+                    <p><span id="wpm">0</span> WPM</p>
+                </div>
+                <div class="progress-card">
+                    <h3>Accuracy</h3>
+                    <p><span id="accuracy">0%</span></p>
+                </div>
+                <div class="progress-card">
+                    <h3>Total Sessions</h3>
+                    <p><span id="sessions">0</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="section">
+            <h2>Achievements</h2>
+            <ul class="achievement-list">
+                <li>🏅 Beginner Typist</li>
+                <li>🏅 Intermediate Typist</li>
+                <li>🏅 Speed Demon</li>
+                <li>🏅 Accuracy Master</li>
+                <!-- Add more achievements here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Typing Speed Booster. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Simulate dynamic progress updates
+        document.getElementById('wpm').textContent = 65; // Example value
+        document.getElementById('accuracy').textContent = '92%'; // Example value
+        document.getElementById('sessions').textContent = 10; // Example value
+    </script>
+</body>
+</html>
