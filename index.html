@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Booster</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Typing Speed Booster</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#library">Library</a></li>
+                <li><a href="#progress">Progress</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section">
+            <h2>Welcome to Typing Speed Booster</h2>
+            <p>Improve your typing skills by reading and typing books and manga simultaneously!</p>
+            <button onclick="startTyping()">Start Typing Now</button>
+        </section>
+
+        <section id="library" class="section">
+            <h2>Library</h2>
+            <div class="library-container">
+                <div class="book">
+                    <h3>Book Title 1</h3>
+                    <button onclick="loadText('book1')">Start Typing</button>
+                </div>
+                <div class="book">
+                    <h3>Manga Title 1</h3>
+                    <button onclick="loadText('manga1')">Start Typing</button>
+                </div>
+                <!-- Add more books/manga here -->
+            </div>
+        </section>
+
+        <section id="progress" class="section">
+            <h2>Your Progress</h2>
+            <div id="progress-stats">
+                <p>Words Per Minute: <span id="wpm">0</span></p>
+                <p>Accuracy: <span id="accuracy">0%</span></p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Typing Speed Booster. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
