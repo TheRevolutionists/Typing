@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library - Typing Speed Booster</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Typing Speed Booster</h1>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="library.html" class="active">Library</a></li>
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="library" class="section">
+            <h2>Library</h2>
+            <p>Select a book or manga to begin typing and improving your skills!</p>
+            <div class="library-container">
+                <div class="book">
+                    <h3>Book Title 1</h3>
+                    <p>Author: John Doe</p>
+                    <button onclick="startTyping('book1')">Start Typing</button>
+                </div>
+                <div class="book">
+                    <h3>Manga Title 1</h3>
+                    <p>Author: Jane Smith</p>
+                    <button onclick="startTyping('manga1')">Start Typing</button>
+                </div>
+                <!-- Additional books/manga can be added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Typing Speed Booster. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function startTyping(title) {
+            alert(`Loading ${title}...`);
+            // Logic to load and display the content for typing goes here
+        }
+    </script>
+</body>
+</html>
